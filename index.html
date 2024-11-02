@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Welcome Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body onload="loadpage()">
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#Habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            
+        </nav>
+        <button id="darkModeToggle" onclick="toggleDarkMode()">Modo Escuro</button>
+    </header>
+
+    <div id="inicio" class="container">
+        <div class="image-container">
+            <img src="Dia do Programador Instagram Post Preto Vermelho Amarelo.png" alt="Laptop Image">
+        </div>
+        <h1>
+            <div id="animatedText" >
+                <h1><span id="TextAnimation"></span></h1>
+            </div>
+        </h1>
+        <p>
+            My name is Ian Vitor, a front-end developer based in Torquay, Devon, UK. 
+            I have worked on a wide range of front-end projects, from DJ applications to eCommerce booking platforms, 
+            with a focus on creating clean, well-crafted interfaces that not only look great but also provide a seamless user experience.
+        </p>
+
+    </div>
+
+    <div id="portfolio" class="work-section">
+        <h2>My Work</h2>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-image">
+
+                <img src="Capturar.PNG" alt="Project Image">
+            </div>
+            <div class="card-content">
+                <h3>Dark mode/Light mode</h3>
+                <p>
+                    Domposer is a website builder which has a GUI that allows you to drag and drop and arrange HTML, CSS, and raw text.
+                </p>
+                <div class="card-icons">
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="capitura2.png" alt="Project Image">
+            </div>
+            <div class="card-content">
+                <h3>calculator</h3>
+                <p>
+                    Domposer is a website builder which has a GUI that allows you to drag and drop and arrange HTML, CSS, and raw text.
+                </p>
+                <div class="card-icons">
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="capitura3.png" alt="Project Image">
+            </div>
+            <div class="card-content">
+                <h3> login screen</h3>
+                <p>
+                    Domposer is a website builder which has a GUI that allows you to drag and drop and arrange HTML, CSS, and raw text.
+                </p>
+                <div class="card-icons">
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <section id="sobre-mim" class="sobre-mim">
+        <div class="sobre-mim-content">
+            <div class="texto-sobre-mim">
+                <h2>About Me</h2>
+                <p>
+                    I'm Vitor Santos Luiz, a developer with skills in HTML, CSS, C#, and databases, as well as knowledge in computer assembly. Everything I know today I learned at Colégio Cotemig, where I developed my skills in programming and technology, turning ideas into practical and efficient solutions.
+                </p>
+            </div>
+            <div class="imagem-sobre-mim">
+                <img src="colegio_foto.jpg" alt="Imagem sobre mim">
+            </div>
+        </div>
+    </section>
+
+    <section id="Habilidades" class="skills">
+        <h2>Skills Bar</h2>
+
+        <div class="skill-bar">
+            <div class="skill-info">
+                <span>Photoshop</span>
+                <span>90%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress Sumir" style="width: 90%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-bar">
+            <div class="skill-info">
+                <span>HTML/CSS</span>
+                <span>60%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-bar">
+            <div class="skill-info">
+                <span>pacote office</span>
+                <span>100%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" style="width: 100%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="contato" class="container">
+        <section class="contato-section" id="contato">
+            <div class="contato-container">
+                <h2>Entre em Contato</h2>
+                <form id="form-contato">
+                    <div class="form-group animado">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group animado">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group animado">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" required>
+                    </div>
+                    <div class="form-group animado">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="animado">Enviar</button>
+                </form>
+                <p id="mensagem-sucesso" class="oculto">Mensagem enviada com sucesso!</p>
+            </div>
+        </section>
+    </div>
+
+     <footer class="footer">
+        <div class="social-icons">
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2024 vitorsantosluiz</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
